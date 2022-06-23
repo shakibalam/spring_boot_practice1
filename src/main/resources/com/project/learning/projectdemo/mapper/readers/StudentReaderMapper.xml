@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.project.learning.projectdemo.mapper.readers.StudentReaderMapper">
+
+    <select id="addStudent" parameterType="com.project.learning.projectdemo.models.Student">
+        insert into student(name,roll_no,state,city,mob_number)
+        values (#{name},#{rollNo},#{state},#{city},#{mobNumber})
+    </select>
+
+</mapper>
